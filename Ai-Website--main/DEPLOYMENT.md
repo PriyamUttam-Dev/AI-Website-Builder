@@ -1,4 +1,4 @@
-# Vercel Deployment Guide
+Cannot GET /# Vercel Deployment Guide
 
 This guide will help you deploy the AI Website Builder to Vercel.
 
