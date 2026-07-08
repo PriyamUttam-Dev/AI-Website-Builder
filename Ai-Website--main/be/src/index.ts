@@ -34,6 +34,11 @@ const app = express();
 app.use(cors())
 app.use(express.json())
 
+// Health check / root route
+app.get("/", (req, res) => {
+    res.json({ status: "ok", message: "AI Website Builder API is running" });
+});
+
 // Simple in-memory cache for template responses
 const templateCache = new Map<string, { answer: string; timestamp: number }>();
 const CACHE_TTL_MS = 1000 * 60 * 60; // 1 hour
